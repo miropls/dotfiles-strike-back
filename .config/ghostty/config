@@ -1,0 +1,43 @@
+# Theme
+theme = Kanagawa Dragon
+
+# Window settings 
+background-opacity = 0.9
+window-decoration = true 
+window-theme = ghostty
+mouse-hide-while-typing = true
+
+# Updates
+auto-update = check
+auto-update-channel = stable
+
+# Keybinds
+keybind = alt+ctrl+y=reload_config
+macos-option-as-alt = left
+
+# Clipboard
+copy-on-select = clipboard
+keybind = alt+c=copy_to_clipboard
+keybind = alt+v=paste_from_clipboard
+
+# Font
+# font-family = Iosevka Nerd Font
+font-family = JetBrainsMono Nerd Font Mono
+# font-family = Terminess Nerd Font Mono
+font-size = 19
+font-thicken = true
+keybind = alt+plus=increase_font_size:1
+keybind = alt+minus=decrease_font_size:1
+keybind = alt+0=reset_font_size
+
+# Window/Tab navigation
+keybind = super+n=new_window
+keybind = super+t=new_tab
+keybind = ctrl+shift+w=close_tab
+keybind = super+w=close_tab
+keybind = ctrl+shift+left=previous_tab
+keybind = ctrl+shift+right=next_tab
+keybind = super+left=previous_tab
+keybind = super+right=next_tab
+keybind = alt+left=unbind
+keybind = alt+right=unbind

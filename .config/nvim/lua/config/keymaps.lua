@@ -36,3 +36,7 @@ end, { expr = true, desc = "Rename (inc-rename.nvim)" })
 -- Buffer navigation: Colemak-DH (alongside existing <S-h>/<S-l>)
 vim.keymap.set("n", "<S-m>", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
 vim.keymap.set("n", "<S-i>", "<cmd>bnext<cr>", { desc = "Next Buffer" })
+
+-- Window navigation: Colemak-DH partial (<C-m>=Enter and <C-i>=Tab cannot be remapped)
+vim.keymap.set("n", "<C-n>", "<C-w>j", { desc = "Go to Lower Window" })
+vim.keymap.set("n", "<C-e>", "<C-w>k", { desc = "Go to Upper Window" })

@@ -56,6 +56,13 @@ export PATH="$PATH:$HOME/.cargo/bin"
 [ -f "$HOME/.secrets" ] && source "$HOME/.secrets"
 
 # Aliases
+alias ...="../../"
+alias ....="../../../"
+alias ls="eza --icons"
+alias la="eza --icons -a"
+alias ll="eza --icons -l --git"
+alias lla="eza --icons -la --git"
+alias lt="eza --icons --tree"
 alias nv="nvim"
 alias nv.="nvim ."
 alias lg="lazygit"

@@ -6,6 +6,13 @@ background-opacity = 0.9
 window-decoration = true 
 window-theme = ghostty
 mouse-hide-while-typing = true
+tab-inherit-working-directory = true
+split-inherit-working-directory = true
+desktop-notifications = true
+
+# MacOS
+macos-window-buttons = hidden
+macos-titlebar-style = transparent
 
 # Updates
 auto-update = check
@@ -24,20 +31,43 @@ keybind = alt+v=paste_from_clipboard
 # font-family = Iosevka Nerd Font
 font-family = JetBrainsMono Nerd Font Mono
 # font-family = Terminess Nerd Font Mono
-font-size = 19
+font-size = 18
 font-thicken = true
 keybind = alt+plus=increase_font_size:1
 keybind = alt+minus=decrease_font_size:1
 keybind = alt+0=reset_font_size
 
-# Window/Tab navigation
+# Tab navigation
 keybind = super+n=new_window
 keybind = super+t=new_tab
-keybind = ctrl+shift+w=close_tab
 keybind = super+w=close_tab
+keybind = ctrl+shift+w=close_tab
 keybind = ctrl+shift+left=previous_tab
 keybind = ctrl+shift+right=next_tab
 keybind = super+left=previous_tab
 keybind = super+right=next_tab
 keybind = alt+left=unbind
 keybind = alt+right=unbind
+
+# Splits: create
+keybind = super+alt+v=new_split:right
+keybind = super+alt+s=new_split:down
+keybind = super+alt+w=close_surface
+
+# Splits: focus (hjkl)
+keybind = super+alt+h=goto_split:left
+keybind = super+alt+j=goto_split:down
+keybind = super+alt+k=goto_split:up
+keybind = super+alt+l=goto_split:right
+
+# Splits: focus (Colemak-DH mnei)
+keybind = super+alt+m=goto_split:left
+keybind = super+alt+n=goto_split:down
+keybind = super+alt+e=goto_split:up
+keybind = super+alt+i=goto_split:right
+
+# Splits: focus (arrow keys)
+keybind = super+alt+arrow_left=goto_split:left
+keybind = super+alt+arrow_down=goto_split:down
+keybind = super+alt+arrow_up=goto_split:up
+keybind = super+alt+arrow_right=goto_split:right

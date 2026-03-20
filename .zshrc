@@ -15,7 +15,7 @@ if [[ ! -d "$ZSH/plugins/zsh-autosuggestions" ]]; then
   eval "$(git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH/plugins/zsh-autosuggestions)"
 fi
 
-ZSH_THEME="af-magic"
+ZSH_THEME=""
 
 plugins=(
     git
@@ -55,6 +55,12 @@ export PATH="$PATH:$HOME/.cargo/bin"
 # Secrets
 [ -f "$HOME/.secrets" ] && source "$HOME/.secrets"
 
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/paintmi/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+
+# End of Docker CLI completions
 # Aliases
 alias ...="../../"
 alias ....="../../../"
@@ -69,17 +75,13 @@ alias lg="lazygit"
 alias gs="git status"
 alias pn="pnpm"
 alias zel="zellij"
+alias cl="claude"
 
 
 # Evaluations and sourcing
-eval "$(zoxide init zsh)"
-
 source $ZSH/oh-my-zsh.sh
 source ~/.safe-chain/scripts/init-posix.sh # Safe-chain Zsh initialization script
-# eval "$(zellij setup --generate-auto-start zsh)"
-# The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/paintmi/.docker/completions $fpath)
-autoload -Uz compinit
-compinit
-# End of Docker CLI completions
+eval "$(zoxide init zsh)"
 eval "$(~/.local/bin/mise activate zsh)"
+eval "$(starship init zsh)"
+

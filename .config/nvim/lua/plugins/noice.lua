@@ -13,6 +13,12 @@ return {
 		},
 	},
 	keys = {
-		{ "<leader>nn", function() require("noice").cmd("history") end, desc = "Noice history" },
+		{
+			"<leader>nn",
+			function()
+				require("noice").cmd("history")
+			end,
+			desc = "Noice history",
+		},
 	},
 }

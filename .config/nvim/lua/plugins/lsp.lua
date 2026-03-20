@@ -13,10 +13,34 @@ return {
 		{ "gl", vim.diagnostic.open_float, desc = "Hover error" },
 		{ "gD", vim.lsp.buf.declaration, desc = "Goto declaration" },
 		{ "ga", vim.lsp.buf.code_action, desc = "Code actions" },
-		{ "gd", function() Snacks.picker.lsp_definitions() end, desc = "Goto definition" },
-		{ "gt", function() Snacks.picker.lsp_type_definitions() end, desc = "Type definition" },
-		{ "gr", function() Snacks.picker.lsp_references() end, desc = "References" },
-		{ "gi", function() Snacks.picker.lsp_implementations() end, desc = "Goto implementations" },
+		{
+			"gd",
+			function()
+				Snacks.picker.lsp_definitions()
+			end,
+			desc = "Goto definition",
+		},
+		{
+			"gt",
+			function()
+				Snacks.picker.lsp_type_definitions()
+			end,
+			desc = "Type definition",
+		},
+		{
+			"gr",
+			function()
+				Snacks.picker.lsp_references()
+			end,
+			desc = "References",
+		},
+		{
+			"gi",
+			function()
+				Snacks.picker.lsp_implementations()
+			end,
+			desc = "Goto implementations",
+		},
 		{
 			"<leader>dn",
 			function()

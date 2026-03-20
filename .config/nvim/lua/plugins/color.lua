@@ -13,9 +13,9 @@ return {
 					LineNrAbove = { bg = "none" },
 					LineNrBelow = { bg = "none" },
 					DiagnosticSignError = { bg = "none" },
-					DiagnosticSignWarn  = { bg = "none" },
-					DiagnosticSignInfo  = { bg = "none" },
-					DiagnosticSignHint  = { bg = "none" },
+					DiagnosticSignWarn = { bg = "none" },
+					DiagnosticSignInfo = { bg = "none" },
+					DiagnosticSignHint = { bg = "none" },
 				}
 			end,
 		})

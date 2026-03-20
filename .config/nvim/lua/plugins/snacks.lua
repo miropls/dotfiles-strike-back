@@ -40,7 +40,7 @@ return {
 		lazygit = { enabled = true },
 		gitbrowse = { enabled = true },
 		gh = { enabled = true },
-		notifier = { enabled = true },
+		notifier = { enabled = false },
 		select = { enabled = true },
 	},
 	config = function(_, opts)
@@ -55,7 +55,6 @@ return {
 		{ "<leader>gb", function() Snacks.gitbrowse() end, desc = "Git Browse", mode = { "n", "v" } },
 		{ "<leader>ghi", function() Snacks.picker.gh_issue() end, desc = "GitHub Issues" },
 		{ "<leader>ghp", function() Snacks.picker.gh_pr() end, desc = "GitHub PRs" },
-		{ "<leader>nn", function() Snacks.notifier.show_history() end, desc = "Notification history" },
 		{ "<leader>ff", function() Snacks.picker.files() end, desc = "Find Files" },
 		{ "<leader>fg", function() Snacks.picker.git_files() end, desc = "Find Git Files" },
 		{ "<leader>fh", function() Snacks.picker.help() end, desc = "Find Help Tags" },

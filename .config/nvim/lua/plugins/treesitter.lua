@@ -1,3 +1,4 @@
+-- REMEMBER: Install the tree-sitter-cli via Homebrew
 return {
 	"nvim-treesitter/nvim-treesitter",
 	lazy = false,

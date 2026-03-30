@@ -6,8 +6,10 @@ local keys = require("keys")
 -- Platform: Windows — default to Fedora 43 in WSL
 -- =============================================================================
 if wezterm.target_triple:find("windows") then
-	config.default_domain = "WSL:Fedora-43"
+  config.default_domain = "WSL:Fedora-43"
 end
+
+config.cursor_blink_rate = 0
 
 -- =============================================================================
 -- Theme
@@ -55,47 +57,47 @@ config.send_composed_key_when_right_alt_is_pressed = true
 -- =============================================================================
 -- window_frame controls the title bar area around the tab pills.
 config.window_frame = {
-	font = wezterm.font("JetBrainsMono Nerd Font Mono"),
-	font_size = 13,
-	active_titlebar_bg = "#1d1b19",
-	inactive_titlebar_bg = "#1d1b19",
+  font = wezterm.font("JetBrainsMono Nerd Font Mono"),
+  font_size = 13,
+  active_titlebar_bg = "#1d1b19",
+  inactive_titlebar_bg = "#1d1b19",
 }
 
 -- colors.tab_bar controls the tab pill colors themselves.
 config.colors = {
-	tab_bar = {
-		-- The strip of space behind the tab pills.
-		background = "#1d1b19",
-		-- Active (focused) tab pill: blend into the terminal background.
-		active_tab = {
-			bg_color = "#181616",
-			fg_color = "#c5c9c5",
-			intensity = "Normal",
-			underline = "None",
-			italic = false,
-			strikethrough = false,
-		},
-		-- Inactive tab pills.
-		inactive_tab = {
-			bg_color = "#1d1b19",
-			fg_color = "#72726f",
-		},
-		inactive_tab_hover = {
-			bg_color = "#242220",
-			fg_color = "#c5c9c5",
-			italic = false,
-		},
-		-- The "+" new-tab button.
-		new_tab = {
-			bg_color = "#1d1b19",
-			fg_color = "#72726f",
-		},
-		new_tab_hover = {
-			bg_color = "#242220",
-			fg_color = "#c5c9c5",
-			italic = false,
-		},
-	},
+  tab_bar = {
+    -- The strip of space behind the tab pills.
+    background = "#1d1b19",
+    -- Active (focused) tab pill: blend into the terminal background.
+    active_tab = {
+      bg_color = "#181616",
+      fg_color = "#c5c9c5",
+      intensity = "Normal",
+      underline = "None",
+      italic = false,
+      strikethrough = false,
+    },
+    -- Inactive tab pills.
+    inactive_tab = {
+      bg_color = "#1d1b19",
+      fg_color = "#72726f",
+    },
+    inactive_tab_hover = {
+      bg_color = "#242220",
+      fg_color = "#c5c9c5",
+      italic = false,
+    },
+    -- The "+" new-tab button.
+    new_tab = {
+      bg_color = "#1d1b19",
+      fg_color = "#72726f",
+    },
+    new_tab_hover = {
+      bg_color = "#242220",
+      fg_color = "#c5c9c5",
+      italic = false,
+    },
+  },
 }
 
 -- =============================================================================

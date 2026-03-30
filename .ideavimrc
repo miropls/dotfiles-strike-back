@@ -1,0 +1,80 @@
+" ── Options ───────────────────────────────────────────────────────────────
+let mapleader = " "
+
+set number
+set relativenumber
+set ignorecase
+set smartcase
+set incsearch
+set nohlsearch
+set scrolloff=8
+set noshowmode
+set clipboard=unnamedplus
+set ideajoin
+
+" ── Plugins ──────────────────────────────────────────────────────────────
+set surround          " mini.surround  → ys/cs/ds
+set commentary        " mini.comment   → gcc/gc
+set sneak             " flash.nvim     → s + 2 chars
+set exchange          " mini.operators → cx (note: nvim uses mx prefix)
+set argtextobj        " argument text objects (aa/ia)
+set highlightedyank   " highlight on yank
+set matchit           " extended % matching
+set NERDTree          " project view integration
+
+" ── Search centered ──────────────────────────────────────────────────────
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+" ── Clipboard ────────────────────────────────────────────────────────────
+nnoremap <leader>y "+y
+vnoremap <leader>y "+y
+nnoremap <leader>Y "+Y
+
+" ── LSP Navigation ───────────────────────────────────────────────────────
+nmap gh <Action>(QuickJavaDoc)
+nmap gl <Action>(ShowErrorDescription)
+nmap gd <Action>(GotoDeclaration)
+nmap gD <Action>(GotoDeclaration)
+nmap gt <Action>(GotoTypeDeclaration)
+nmap gr <Action>(FindUsages)
+nmap gi <Action>(GotoImplementation)
+nmap ga <Action>(ShowIntentionActions)
+
+" ── Rename ───────────────────────────────────────────────────────────────
+nmap <leader>rn <Action>(RenameElement)
+
+" ── Diagnostics ──────────────────────────────────────────────────────────
+nmap <leader>dn <Action>(GotoNextError)
+nmap <leader>dp <Action>(GotoPreviousError)
+nmap <leader>dd <Action>(ActivateProblemsViewToolWindow)
+
+" ── Find / Search ────────────────────────────────────────────────────────
+nmap <leader>ff <Action>(GotoFile)
+nmap <leader>fg <Action>(GotoFile)
+nmap <leader>p  <Action>(FindInPath)
+
+" ── File Tree ────────────────────────────────────────────────────────────
+nmap <leader>m <Action>(SelectInProjectView)
+
+" ── Tabs / Panes ─────────────────────────────────────────────────────────
+nmap <leader>cr <Action>(CloseAllToTheRight)
+nmap <leader>cl <Action>(CloseAllToTheLeft)
+nmap <leader>ca <Action>(CloseAllEditors)
+
+" ── Git ──────────────────────────────────────────────────────────────────
+nmap <leader>gsp <Action>(VcsShowCurrentChangeMarker)
+
+" ── Toggles ──────────────────────────────────────────────────────────────
+nmap <leader>tw <Action>(EditorToggleUseSoftWraps)
+nmap <leader>ti <Action>(ToggleInlayHintsGloballyAction)
+
+" ── Move Lines (mini.move) ───────────────────────────────────────────────
+nmap <A-Up>    <Action>(MoveLineUp)
+nmap <A-Down>  <Action>(MoveLineDown)
+vmap <A-Up>    <Action>(MoveLineUp)
+vmap <A-Down>  <Action>(MoveLineDown)
+nnoremap <A-Left>  <<
+nnoremap <A-Right> >>
+vnoremap <A-Left>  <gv
+vnoremap <A-Right> >gv

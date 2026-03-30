@@ -85,7 +85,7 @@ return {
 					keymap = { preset = "enter" },
 					cmdline = {
 						keymap = {
-							preset = "enter",
+							preset = "cmdline",
 							["<Tab>"] = {
 								function(cmp)
 									if not cmp.is_menu_visible() then

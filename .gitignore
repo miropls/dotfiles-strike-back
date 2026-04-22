@@ -1,0 +1,5 @@
+# pi — local-only / ephemeral files, never commit these
+.pi/agent/auth.json
+.pi/agent/run-history.jsonl
+.pi/agent/sessions/
+.pi/plan.md

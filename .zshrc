@@ -75,13 +75,16 @@ alias lg="lazygit"
 alias gs="git status"
 alias pn="pnpm"
 alias zel="zellij"
-alias cl="claude"
+alias oc="opencode"
 
 
 # Evaluations and sourcing
 source $ZSH/oh-my-zsh.sh
 source ~/.safe-chain/scripts/init-posix.sh # Safe-chain Zsh initialization script
-eval "$(zoxide init zsh)"
 eval "$(~/.local/bin/mise activate zsh)"
+eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
+
+# opencode
+export PATH=/Users/paintmi/.opencode/bin:$PATH

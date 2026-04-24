@@ -1,5 +1,5 @@
 # Theme
-theme = Carbonfox 
+theme = ayu
 
 # Window settings 
 background-opacity = 0.9
@@ -28,11 +28,11 @@ keybind = alt+c=copy_to_clipboard
 keybind = alt+v=paste_from_clipboard
 
 # Font
-font-family = Iosevka Nerd Font
-# font-family = JetBrainsMono Nerd Font Mono
+# font-family = Iosevka Nerd Font
+font-family = JetBrainsMono Nerd Font Mono
 # font-family = Terminess Nerd Font Mono
-font-size = 17
-font-thicken = true
+font-size = 16
+font-thicken = false 
 keybind = alt+plus=increase_font_size:1
 keybind = alt+minus=decrease_font_size:1
 keybind = alt+0=reset_font_size

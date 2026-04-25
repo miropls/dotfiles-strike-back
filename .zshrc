@@ -1,5 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-export EDITOR="nvim"
+export EDITOR="hx"
 export VISUAL="$EDITOR"
 export DOTNET_ROOT="$(dirname $(which dotnet))"
 
@@ -71,6 +71,7 @@ alias lla="eza --icons -la --git"
 alias lt="eza --icons --tree"
 alias nv="nvim"
 alias nv.="nvim ."
+alias hx.="hx ."
 alias lg="lazygit"
 alias gs="git status"
 alias pn="pnpm"
@@ -80,7 +81,7 @@ alias oc="opencode"
 
 # Evaluations and sourcing
 source $ZSH/oh-my-zsh.sh
-source ~/.safe-chain/scripts/init-posix.sh # Safe-chain Zsh initialization script
+# source ~/.safe-chain/scripts/init-posix.sh # Safe-chain Zsh initialization script
 eval "$(~/.local/bin/mise activate zsh)"
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"

@@ -170,6 +170,8 @@ keybinds clear-defaults=true {
         bind "Alt Shift p" { ToggleGroupMarking; }
         bind "Ctrl Shift Up" { ScrollUp; }
         bind "Ctrl Shift Down" { ScrollDown; }
+        bind "Alt Ctrl Shift Up" { HalfPageScrollUp; }
+        bind "Alt Ctrl Shift Down" { HalfPageScrollDown; }
     }
     shared_except "locked" "renametab" "renamepane" {
         bind "Ctrl g" { SwitchToMode "locked"; }
@@ -236,7 +238,9 @@ keybinds clear-defaults=true {
 // changing these requires a restart to take effect
 plugins {
     about location="zellij:about"
-    compact-bar location="zellij:compact-bar"
+    compact-bar location="zellij:compact-bar" {
+        tooltip "F1"
+    }
     configuration location="zellij:configuration"
     filepicker location="zellij:strider" {
         cwd "/"
@@ -270,7 +274,7 @@ web_client {
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-theme "kanagawa"
+theme "ayu-dark"
  
 // Choose the base input mode of zellij.
 // Default: normal

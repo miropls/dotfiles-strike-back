@@ -1,11 +1,14 @@
 return {
-	"EdenEast/nightfox.nvim",
+	"AlexvZyl/nordic.nvim",
 	lazy = false,
 	priority = 1000,
 	config = function()
-		require("nightfox").setup({
-			transparent = true,
+		require("nordic").setup({
+			transparent = {
+				bg = false,
+			},
+			swap_backgrounds = true,
 		})
-		vim.cmd.colorscheme("carbonfox")
+		vim.cmd.colorscheme("nordic")
 	end,
 }

@@ -73,10 +73,10 @@ keybind = super+alt+arrow_up=goto_split:up
 keybind = super+alt+arrow_right=goto_split:right
 
 # Scrolling: 1 line at a time
-keybind = ctrl+shift+arrow_up=scroll_page_lines:-1
-keybind = ctrl+shift+arrow_down=scroll_page_lines:1
+# keybind = ctrl+shift+arrow_up=scroll_page_lines:-1
+# keybind = ctrl+shift+arrow_down=scroll_page_lines:1
 
 # Scrolling: half page at a time
-keybind = alt+ctrl+shift+arrow_up=scroll_page_fractional:-0.5
-keybind = alt+ctrl+shift+arrow_down=scroll_page_fractional:0.5
+# keybind = alt+ctrl+shift+arrow_up=scroll_page_fractional:-0.5
+# keybind = alt+ctrl+shift+arrow_down=scroll_page_fractional:0.5
 

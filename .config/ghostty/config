@@ -1,5 +1,5 @@
 # Theme
-theme = ayu
+theme = Catppuccin Mocha 
 
 # Window settings 
 background-opacity = 0.9
@@ -32,7 +32,7 @@ keybind = alt+v=paste_from_clipboard
 font-family = JetBrainsMono Nerd Font Mono
 # font-family = Terminess Nerd Font Mono
 font-size = 16
-font-thicken = false 
+font-thicken = true
 keybind = alt+plus=increase_font_size:1
 keybind = alt+minus=decrease_font_size:1
 keybind = alt+0=reset_font_size

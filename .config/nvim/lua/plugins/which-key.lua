@@ -17,9 +17,7 @@ return {
 			{ "<leader>n", group = "LSP" },
 			{ "<leader>o", group = "Overseer" },
 			{ "<leader>r", group = "Rename" },
-			{ "<leader>s", group = "Session" },
 			{ "<leader>t", group = "Toggle" },
-			{ "m", group = "Mini" },
 		},
 	},
 }

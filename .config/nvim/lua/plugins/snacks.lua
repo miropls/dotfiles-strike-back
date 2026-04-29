@@ -55,14 +55,6 @@ return {
 						icon = "",
 					},
 					{
-						key = "p",
-						desc = "Restore Session",
-						action = function()
-							require("persistence").select()
-						end,
-						icon = "",
-					},
-					{
 						key = "q",
 						desc = "Quit",
 						action = ":qa",

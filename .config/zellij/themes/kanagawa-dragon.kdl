@@ -1,0 +1,120 @@
+themes {
+    kanagawa-dragon {
+        text_unselected {
+            base 197 201 197
+            background 24 22 22
+            emphasis_0 196 116 110
+            emphasis_1 139 164 176
+            emphasis_2 138 154 123
+            emphasis_3 137 146 167
+        }
+        text_selected {
+            base 13 12 12
+            background 135 169 135
+            emphasis_0 196 116 110
+            emphasis_1 139 164 176
+            emphasis_2 138 154 123
+            emphasis_3 137 146 167
+        }
+        ribbon_selected {
+            base 13 12 12
+            background 135 169 135
+            emphasis_0 196 116 110
+            emphasis_1 182 146 123
+            emphasis_2 137 146 167
+            emphasis_3 142 164 162
+        }
+        ribbon_unselected {
+            base 13 12 12
+            background 166 166 156
+            emphasis_0 196 116 110
+            emphasis_1 197 201 197
+            emphasis_2 142 164 162
+            emphasis_3 162 146 163
+        }
+        table_title {
+            base 135 169 135
+            background 0
+            emphasis_0 196 116 110
+            emphasis_1 139 164 176
+            emphasis_2 138 154 123
+            emphasis_3 137 146 167
+        }
+        table_cell_selected {
+            base 13 12 12
+            background 135 169 135
+            emphasis_0 196 116 110
+            emphasis_1 139 164 176
+            emphasis_2 138 154 123
+            emphasis_3 137 146 167
+        }
+        table_cell_unselected {
+            base 197 201 197
+            background 24 22 22
+            emphasis_0 196 116 110
+            emphasis_1 139 164 176
+            emphasis_2 138 154 123
+            emphasis_3 137 146 167
+        }
+        list_selected {
+            base 13 12 12
+            background 135 169 135
+            emphasis_0 196 116 110
+            emphasis_1 139 164 176
+            emphasis_2 138 154 123
+            emphasis_3 137 146 167
+        }
+        list_unselected {
+            base 197 201 197
+            background 24 22 22
+            emphasis_0 196 116 110
+            emphasis_1 139 164 176
+            emphasis_2 138 154 123
+            emphasis_3 137 146 167
+        }
+        frame_selected {
+            base 135 169 135
+            background 0
+            emphasis_0 196 116 110
+            emphasis_1 139 164 176
+            emphasis_2 137 146 167
+            emphasis_3 0
+        }
+        frame_highlight {
+            base 182 146 123
+            background 0
+            emphasis_0 137 146 167
+            emphasis_1 182 146 123
+            emphasis_2 182 146 123
+            emphasis_3 182 146 123
+        }
+        exit_code_success {
+            base 152 187 108
+            background 0
+            emphasis_0 106 149 137
+            emphasis_1 24 22 22
+            emphasis_2 139 164 176
+            emphasis_3 135 169 135
+        }
+        exit_code_error {
+            base 232 36 36
+            background 0
+            emphasis_0 255 158 59
+            emphasis_1 0
+            emphasis_2 0
+            emphasis_3 0
+        }
+        multiplayer_user_colors {
+            player_1 162 146 163
+            player_2 139 164 176
+            player_3 142 164 162
+            player_4 135 169 135
+            player_5 196 178 138
+            player_6 137 146 167
+            player_7 196 116 110
+            player_8 228 104 118
+            player_9 127 180 202
+            player_10 182 146 123
+        }
+    }
+}
